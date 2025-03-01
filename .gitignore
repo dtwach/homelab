@@ -1,0 +1,6 @@
+.env
+#nginx-proxy-manager
+**/data
+**/letsencrypt
+#pihole
+**/etc-pihole
