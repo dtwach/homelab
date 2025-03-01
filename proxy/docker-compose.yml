@@ -14,8 +14,12 @@ services:
       - ./letsencrypt:/etc/letsencrypt
     networks:
       - homelab
+      - nextcloud-aio
 
 networks:
   homelab:
     name: homelab
     driver: bridge
+  nextcloud-aio:
+    name: nextcloud-aio
+    external: true

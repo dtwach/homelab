@@ -1,6 +1,8 @@
 .env
-#nginx-proxy-manager
+# nginx-proxy-manager
 **/data
 **/letsencrypt
-#pihole
+# pihole
 **/etc-pihole
+# vault
+**/vw-data

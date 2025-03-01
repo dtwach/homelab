@@ -1,0 +1,16 @@
+services:
+  vault:
+    image: vaultwarden/server:latest
+    container_name: vault
+    restart: always
+    environment:
+      WEBSOCKET_ENABLED: "true"  # Enable WebSocket notifications.
+      SIGNUPS_ALLOWED: "false"
+    volumes:
+      - ./vw-data:/data
+    networks:
+      - homelab
+
+networks:
+  homelab:
+    external: true
