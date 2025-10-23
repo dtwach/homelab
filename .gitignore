@@ -1,8 +1,18 @@
 .env
 # nginx-proxy-manager
-**/data
-**/letsencrypt
+**/proxy/**/data
+**/proxy/**/letsencrypt
 # pihole
-**/etc-pihole
+**/services/pihole/**/etc-pihole
 # vault
-**/vw-data
+**/services/vault/**/vw-data
+# immich
+**/services/immich/**/library
+**/services/immich/**/postgres
+# jellyfin
+**/services/jellyfin/**/cache
+**/services/jellyfin/**/config
+**/services/jellyfin/**/media
+# web
+**/services/web
+**/services/web/**
